@@ -2,7 +2,7 @@ import React from "react";
 
 const ProgrammingSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-white p-6 gap-6">
+  <section className="relative min-h-screen flex flex-col items-center justify-center text-gray-900 dark:text-white p-6 gap-6">
 
       <h2 className="text-5xl font-bold text-purple-400 text-center">
         Problem Solving
