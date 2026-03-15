@@ -20,7 +20,7 @@ const About = () => (
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        I've solved over <span className="font-semibold text-light-primary dark:text-dark-primary">1000+ coding problems</span> across platforms like LeetCode, GeeksforGeeks, Coding Ninjas, Codeforces gaining deep insights into algorithmic thinking and optimization. I'm proficient in languages like <strong>Java and C++</strong>, and regularly apply these skills in building projects.       </motion.p>
+        I've solved over <span className="font-semibold text-light-primary dark:text-dark-primary">700+ coding problems</span> across platforms like LeetCode, GeeksforGeeks, Coding Ninjas, Codeforces gaining deep insights into algorithmic thinking and optimization. I'm proficient in languages like <strong>Java and C++</strong>, and regularly apply these skills in building projects.       </motion.p>
       <motion.p
         className="mt-6"
         initial={{ opacity: 0, y: 20 }}
