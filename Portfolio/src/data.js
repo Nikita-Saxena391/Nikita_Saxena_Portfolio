@@ -29,20 +29,20 @@ import hms10 from './assets/projects/hms10.jpeg';
 import hms11 from './assets/projects/hms11.jpeg';
 import hms12 from './assets/projects/hms12.jpeg';
 
-import fit1 from './assets/projects/Fit1.jpeg';
-import fit2 from './assets/projects/Fit2.jpeg';
-import fit3 from './assets/projects/Fit3.jpeg';
-import fit4 from './assets/projects/Fit4.jpeg';
-import fit5 from './assets/projects/Fit5.jpeg';
-import fit6 from './assets/projects/Fit6.jpeg';
-import fit7 from './assets/projects/Fit7.jpeg';
-import fit8 from './assets/projects/Fit8.jpeg';
-import fit9 from './assets/projects/Fit9.jpeg';
-import fit10 from './assets/projects/Fit10.jpeg';
-import fit11 from './assets/projects/Fit11.jpeg';
-import fit12 from './assets/projects/Fit12.jpeg'; 
-import fit13 from './assets/projects/Fit13.jpeg';
-import fit14 from './assets/projects/Fit14.jpeg';
+import fit1 from './assets/projects/i1.jpeg';
+import fit2 from './assets/projects/i2.jpeg';
+import fit3 from './assets/projects/i3.jpeg';
+import fit4 from './assets/projects/i4.jpeg';
+import fit5 from './assets/projects/i5.jpeg';
+import fit6 from './assets/projects/i6.jpeg';
+import fit7 from './assets/projects/i7.jpeg';
+import fit8 from './assets/projects/i8.jpeg';
+import fit9 from './assets/projects/i9.jpeg';
+import fit10 from './assets/projects/i10.jpeg';
+import fit11 from './assets/projects/i11.jpeg';
+import fit12 from './assets/projects/i12.jpeg'; 
+import fit13 from './assets/projects/i13.jpeg';
+import fit14 from './assets/projects/i14.jpeg';
 import Shaastra from './assets/achievement/Shaastra.jpeg';
 
 // --- DATA ---
@@ -91,36 +91,17 @@ export const projectsData = [
   }
 },
 {
-  title: 'AI Fitness Tracker',
-  image: fit1,
-  description: 'An AI-powered fitness tracking web application that helps users monitor calories, set fitness goals, track workouts, and analyze food images using Google Gemini AI.',
-  tags: ['React', 'Strapi', 'Tailwind CSS', 'Google Gemini AI'],
-  live: 'https://fitness-gs.vercel.app/',
-  source: 'https://github.com/Nikita-Saxena391/Fitness_Tracker',
-  features: [
-    'Set and manage daily fitness goals',
-    'Track food intake and calories consumed',
-    'Log fitness activities and calories burned',
-    'User authentication with Sign Up and Sign In',
-    'Update and manage user profile data',
-    'Upload food images for AI-based calorie analysis',
-    'Automatic food recognition using Google Gemini AI',
-    'Deployed online using Strapi Cloud and Vercel'
-  ],
+  title: 'InterviewAI - AI Career & Interview Platform',
+  image: fit2, // replace with your main image import
+  description: 'A real SaaS-style AI platform where users can upload resumes, generate interview questions, practice technical and HR rounds, receive intelligent feedback, and access career roadmap & assistant features through a credit-based system.',
+  tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Razorpay', 'Framer Motion', 'Render'],
+  live: 'https://interviewai-app-70e1.onrender.com/', // add live link if deployed
+  source: 'https://github.com/Nikita-Saxena391/InterviewAI', // add GitHub/source link if available
   details: {
-    problem:
-      'Many people struggle to consistently track their daily food intake and fitness activities. Manual calorie calculation can be tedious and inaccurate.',
-      
-    solution:
-      'This AI-powered fitness tracker simplifies health monitoring by allowing users to log workouts, track calories, and analyze food images using Google Gemini AI to automatically estimate calorie intake.',
-
-    challenges:
-      'Integrating Google Gemini AI for food image analysis, managing real-time calorie tracking, implementing secure authentication, and connecting the React frontend with the Strapi backend API.',
-
-    images: [
-      fit1, fit2, fit3, fit4, fit5, fit6, fit7,
-      fit8, fit9, fit10, fit11, fit12, fit13, fit14
-    ]
+    problem: 'Job seekers often struggle to prepare effectively for interviews and lack structured guidance. Existing platforms do not integrate AI-driven feedback, practice questions, and career roadmap guidance into one seamless experience.',
+    solution: 'I developed a full-stack SaaS platform where users can upload their resume, get AI-generated interview questions, practice technical and HR rounds, receive intelligent feedback, and access career roadmap & assistant features. A credit-based system with Razorpay integration ensures scalable access. The platform uses React for the front-end with Framer Motion animations, Node.js and Express for the backend, MongoDB for data storage, Firebase for Google authentication, and is deployed on Render for production-ready usage.',
+    challenges: 'Integrating AI-generated content with real-time feedback, handling secure file uploads, designing a smooth credit-based access flow, and ensuring a seamless user experience with Framer Motion animations were the biggest challenges. Payment integration and deployment for a full-stack SaaS product required careful attention to security, reliability, and scalability.',
+    images: [fit1,fit2,fit3,fit4,fit5,fit6,fit7,fit8,fit9,fit10,fit11,fit11,fit12,fit13,fit14] // replace with your image imports
   }
 },
 // {
@@ -150,6 +131,7 @@ export const projectsData = [
     challenges: 'Creating a dynamic yet performant design was a balancing act. I had to fine-tune animation timings, structure reusable components efficiently, and ensure cross-browser/device compatibility. Implementing the interactive project modal and theme persistence added an extra layer of complexity that was rewarding to solve.',
     images: [Portfolio, Portfolio_1, Portfolio_2, Portfolio_3]
   }
+  
 },
 ];
 

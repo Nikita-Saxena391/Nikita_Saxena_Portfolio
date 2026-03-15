@@ -8,7 +8,7 @@ import Layout from './components/Layout';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import ProblemSolving from './components/ProblemSolving';
+
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -16,6 +16,7 @@ import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
+import ProgrammingSection from "./components/ProgrammingSection";
 
 function App() {
   const [modalData, setModalData] = useState(null);
@@ -41,7 +42,7 @@ function App() {
         <main className="relative z-10">
           <Hero />
           <About />
-          <ProblemSolving />
+          <ProgrammingSection />
           <Skills />
           <Experience />
           <Projects onProjectClick={setModalData} />
