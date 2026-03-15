@@ -8,7 +8,7 @@ const ProgrammingSection = () => {
         Problem Solving
       </h2>
 
-      <p className="text-center max-w-2xl text-lg md:text-xl">
+      <p className="text-center max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300">
         I actively practice Data Structures and Algorithms on LeetCode to improve
         my problem-solving and logical thinking skills. I regularly solve problems
         covering topics such as arrays, strings, dynamic programming, graphs,
