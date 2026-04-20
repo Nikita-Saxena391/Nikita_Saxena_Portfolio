@@ -3,7 +3,7 @@ import { FaBriefcase, FaChartLine, FaCertificate, FaUserGraduate, FaLightbulb, F
 import { SiTailwindcss, SiVite, SiMongodb, SiExpress, SiCplusplus, SiPostman, SiFigma, SiStreamlit, SiReact, SiNodedotjs, SiJavascript, SiPython, SiHtml5, SiCss3, SiGit, SiGithub, SiSpringboot } from 'react-icons/si';
 import { SiMysql } from 'react-icons/si';
 
-
+import { SiRedis } from 'react-icons/si';
 import internship from './assets/achievement/Internship.jpeg';
 
 
@@ -28,7 +28,20 @@ import hms9 from './assets/projects/hms9.jpeg';
 import hms10 from './assets/projects/hms10.jpeg';
 import hms11 from './assets/projects/hms11.jpeg';
 import hms12 from './assets/projects/hms12.jpeg';
-
+import three from './assets/projects/3.jpeg';
+import four from './assets/projects/4.jpeg';
+import five from './assets/projects/5.jpeg';   
+import six from './assets/projects/6.jpeg';
+import seven from './assets/projects/7.jpeg';
+import eight from './assets/projects/8.jpeg';
+import nine from './assets/projects/9.jpeg';
+import one from './assets/projects/one.jpeg';
+import two from './assets/projects/two.jpeg';
+import ten from './assets/projects/10.jpeg';
+import eleven from './assets/projects/11.jpeg';
+import twelve from './assets/projects/12.jpeg';
+import thirteen from './assets/projects/13.jpeg';
+import fourteen from './assets/projects/14.jpeg';
 import fit1 from './assets/projects/i1.jpeg';
 import fit2 from './assets/projects/i2.jpeg';
 import fit3 from './assets/projects/i3.jpeg';
@@ -57,7 +70,7 @@ export const socialLinks = {
 export const skillsData = {
   languages: [ { name: 'C++', icon: SiCplusplus }, { name: 'Java', icon: FaJava }, { name: 'JavaScript', icon: SiJavascript }, ],
   frontend: [ { name: 'HTML5', icon: SiHtml5 }, { name: 'CSS3', icon: SiCss3 }, { name: 'Tailwind CSS', icon: SiTailwindcss }, { name: 'React.js', icon: SiReact }, { name: 'Vite', icon: SiVite }, ],
-  backend: [ { name: 'Spring Boot', icon: SiSpringboot }, { name: 'MySQL', icon: SiMysql },],
+  backend: [ { name: 'Spring Boot', icon: SiSpringboot },{ name: 'Node.js', icon: SiNodedotjs },  { name: 'MySQL', icon: SiMysql },{ name: 'Redis (Basics)', icon: SiNodedotjs },],
   // Ml_Datascience: [ { name: 'Python', icon: SiPython }, { name: 'Machine Learning', icon: FaBriefcase }, ],
   tools: [ { name: 'Git', icon: SiGit }, { name: 'GitHub', icon: SiGithub }, { name: 'Postman', icon: SiPostman } ],
 };
@@ -91,33 +104,39 @@ export const projectsData = [
   }
 },
 {
-  title: 'InterviewAI - AI Career & Interview Platform',
-  image: fit2, // replace with your main image import
-  description: 'A real SaaS-style AI platform where users can upload resumes, generate interview questions, practice technical and HR rounds, receive intelligent feedback, and access career roadmap & assistant features through a credit-based system.',
-  tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Razorpay', 'Framer Motion', 'Render'],
-  live: 'https://interviewai-app-70e1.onrender.com/', // add live link if deployed
-  source: 'https://github.com/Nikita-Saxena391/InterviewAI', // add GitHub/source link if available
+  title: 'PrepX – AI Career Preparation Platform',
+  image: one , // add your image import
+  description:
+    'An AI-powered career preparation platform offering resume building, mock interviews, quizzes, and personalized learning roadmaps with real-time AI assistance.',
+  tags: ['React', 'Node.js', 'Express', 'Redis', 'AI', 'Inngest', 'React Flow'],
+
+  live: 'https://prep-x-rz4w.vercel.app/',
+  source: 'https://github.com/Nikita-Saxena391/PrepX',
+
+  features: [
+    'AI-powered career chat system with real-time streaming responses',
+    'Redis-based chat session management for low-latency interaction',
+    'AI resume builder with optimization and content enhancement',
+    'Technical quiz system with auto-generated questions and feedback',
+    'AI-generated learning roadmaps visualized using React Flow',
+    'Industry insights module with Redis caching and scheduled refresh',
+    'Scalable AI pipeline for content generation and workflow automation'
+  ],
+
   details: {
-    problem: 'Job seekers often struggle to prepare effectively for interviews and lack structured guidance. Existing platforms do not integrate AI-driven feedback, practice questions, and career roadmap guidance into one seamless experience.',
-    solution: 'I developed a full-stack SaaS platform where users can upload their resume, get AI-generated interview questions, practice technical and HR rounds, receive intelligent feedback, and access career roadmap & assistant features. A credit-based system with Razorpay integration ensures scalable access. The platform uses React for the front-end with Framer Motion animations, Node.js and Express for the backend, MongoDB for data storage, Firebase for Google authentication, and is deployed on Render for production-ready usage.',
-    challenges: 'Integrating AI-generated content with real-time feedback, handling secure file uploads, designing a smooth credit-based access flow, and ensuring a seamless user experience with Framer Motion animations were the biggest challenges. Payment integration and deployment for a full-stack SaaS product required careful attention to security, reliability, and scalability.',
-    images: [fit1,fit2,fit3,fit4,fit5,fit6,fit7,fit8,fit9,fit10,fit11,fit11,fit12,fit13,fit14] // replace with your image imports
+    problem:
+      'Students and job seekers struggle with structured preparation, resume optimization, and personalized career guidance in one unified platform.',
+
+    solution:
+      'PrepX provides an AI-driven ecosystem combining resume building, interview preparation, quizzes, and learning roadmaps with real-time intelligent feedback.',
+
+    challenges:
+      'Handling real-time AI streaming responses, managing Redis-based session state, designing scalable AI workflows, and integrating multiple AI services efficiently.',
+
+    images: [one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen]
   }
 },
-// {
-//   title: 'Movie Recommendation System',
-//   image: MRS,
-//   description: 'A content-based movie recommendation system that uses natural language processing (NLP) and cosine similarity to suggest similar films based on user preferences.',
-//   tags: ['Python', 'Streamlit', 'ML', 'NLP'],
-//   live: 'https://movie-recommendation-system-e8pjs6dvu6pcx6ctfhd3hj.streamlit.app/',
-//   source: 'https://github.com/Resham011/Movie-Recommendation-System',
-//   details: {
-//     problem: 'With thousands of movies available, viewers often find it difficult to discover films that align with their tastes and preferences.',
-//     solution: 'I designed and developed a content-based recommendation engine using Python and NLP techniques. By processing a dataset of over 5000 movies, the system analyzes genres, keywords, taglines, and cast information to generate similarity scores using cosine similarity. Users receive dynamic, personalized movie recommendations in a clean Streamlit interface.',
-//     challenges: 'One major challenge was engineering meaningful features from sparse and inconsistent text data. I combined relevant attributes like genres, keywords, and cast into a unified “tag” field, handled missing values, and optimized the similarity matrix to maintain performance. Streamlining the NLP pipeline and ensuring responsiveness in the Streamlit UI were also key technical hurdles.',
-//     images: [MRS_1, MRS_2, MRS]
-//   }
-// },  
+
 {
   title: 'Personal Portfolio Website',
   image: Portfolio,
@@ -205,20 +224,7 @@ export const achievementsData = [
 }
 ];
 export const experienceData = [
-{
-    date: 'Jan 2026 - Present',
-    title: 'Web Development Intern',
-    company: 'Quantum Dot India',
-    description: 'Working as a Web Development Intern developing responsive web applications and improving frontend user experience using modern web technologies.',
-    isCurrent: true,
-    icon: FaBriefcase,
-    details: [
-        "Developing responsive web interfaces using HTML, CSS, JavaScript, and modern frontend technologies.",
-        "Collaborating with developers to build and enhance web application features.",
-        "Improving UI responsiveness and optimizing performance across devices.",
-        "Gaining real-world experience working on live development projects."
-    ]
-},
+
 {
     date: 'Jan 2025 - Feb 2025',
     title: 'Web Development Intern',
